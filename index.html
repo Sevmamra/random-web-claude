@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaFlow - Creative Digital Solutions</title>
+    <meta name="description" content="Transform your digital presence with cutting-edge creative solutions">
+    <meta name="keywords" content="creative, digital, solutions, web design, animation, modern">
+    <meta name="author" content="NexaFlow Studios">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css for additional animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS for sliders -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-container">
+            <div class="preloader-logo">
+                <svg width="80" height="80" viewBox="0 0 100 100">
+                    <circle class="preloader-circle" cx="50" cy="50" r="45" fill="none" stroke="url(#gradient)" stroke-width="8"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="preloader-text">NexaFlow</div>
+            </div>
+            <div class="preloader-progress">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <div class="brand-icon">
+                        <svg width="32" height="32" viewBox="0 0 100 100">
+                            <path d="M20,20 L80,20 L60,50 L80,80 L20,80 L40,50 Z" fill="url(#brandGradient)"/>
+                            <defs>
+                                <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1"/>
+                                    <stop offset="100%" style="stop-color:#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-text">NexaFlow</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-section="home">
+                            <span class="nav-text">Home</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-section="about">
+                            <span class="nav-text">About</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-section="services">
+                            <span class="nav-text">Services</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <span class="nav-text">Portfolio</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link" data-section="team">
+                            <span class="nav-text">Team</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link" data-section="testimonials">
+                            <span class="nav-text">Reviews</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link" data-section="blog">
+                            <span class="nav-text">Blog</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-section="contact">
+                            <span class="nav-text">Contact</span>
+                            <div class="nav-indicator"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="hero-particles"></div>
+            <div class="hero-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-shape hero-shape-4"></div>
+                <div class="hero-shape hero-shape-5"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <span class="badge-text">✨ Welcome to the Future</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Create Amazing</span>
+                        <span class="title-line title-accent">Digital Experiences</span>
+                        <span class="title-line">That Convert</span>
+                    </h1>
+                    <p class="hero-description">
+                        We craft stunning digital solutions that combine cutting-edge design with powerful functionality. 
+                        Transform your vision into reality with our expert team of creative professionals.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-number" data-target="150">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#portfolio" class="btn btn-primary btn-hero">
+                        <span class="btn-text">View Our Work</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-hero">
+                        <span class="btn-text">Get Started</span>
+                        <i class="fas fa-play btn-icon"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-scroll" data-aos="fade-up" data-aos-delay="800">
+                    <div class="scroll-indicator">
+                        <div class="scroll-text">Scroll to explore</div>
+                        <div class="scroll-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                <div class="hero-card hero-card-1">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="card-title">Creative Dashboard</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="dashboard-chart">
+                            <canvas id="heroChart1" width="200" height="120"></canvas>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="dashboard-stat">
+                                <div class="stat-icon">📈</div>
+                                <div class="stat-info">
+                                    <div class="stat-value">+34%</div>
+                                    <div class="stat-name">Growth</div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat">
+                                <div class="stat-icon">⚡</div>
+                                <div class="stat-info">
+                                    <div class="stat-value">2.4s</div>
+                                    <div class="stat-name">Load Time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-card hero-card-2">
+                    <div class="card-content">
+                        <div class="design-preview">
+                            <div class="design-tools">
+                                <div class="tool-item">🎨</div>
+                                <div class="tool-item">✏️</div>
+                                <div class="tool-item">🖌️</div>
+                                <div class="tool-item">📐</div>
+                            </div>
+                            <div class="design-canvas">
+                                <div class="canvas-element element-1"></div>
+                                <div class="canvas-element element-2"></div>
+                                <div class="canvas-element element-3"></div>
+                                <div class="canvas-grid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-floating-elements">
+                    <div class="floating-element floating-1">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <div class="floating-element floating-2">
+                        <i class="fab fa-sketch"></i>
+                    </div>
+                    <div class="floating-element floating-3">
+                        <i class="fab fa-adobe"></i>
+                    </div>
+                    <div class="floating-element floating-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">About Us</div>
+                <h2 class="section-title">
+                    <span class="title-line">Crafting Digital</span>
+                    <span class="title-line title-accent">Excellence Since 2019</span>
+                </h2>
+                <p class="section-description">
+                    We're a passionate team of designers, developers, and strategists who believe in the power of great design to transform businesses and create meaningful connections.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-story" data-aos="fade-right">
+                    <div class="story-content">
+                        <h3 class="story-title">Our Story</h3>
+                        <p class="story-text">
+                            Founded in 2019, NexaFlow emerged from a simple belief: every business deserves exceptional digital experiences. 
+                            What started as a small team of creative minds has grown into a full-service digital agency that's helped over 
+                            150 clients transform their digital presence.
+                        </p>
+                        <p class="story-text">
+                            Our journey has been marked by constant innovation, learning, and pushing the boundaries of what's possible 
+                            in digital design and development. We don't just create websites and apps; we craft experiences that resonate 
+                            with users and drive real business results.
+                        </p>
+                        
+                        <div class="story-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🏆</div>
+                                <div class="highlight-text">
+                                    <strong>Award-Winning Team</strong>
+                                    <span>Recognized for design excellence</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🚀</div>
+                                <div class="highlight-text">
+                                    <strong>Innovation First</strong>
+                                    <span>Leading with cutting-edge solutions</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">💡</div>
+                                <div class="highlight-text">
+                                    <strong>Creative Excellence</strong>
+                                    <span>Pushing creative boundaries daily</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-container">
+                        <div class="about-image">
+                            <div class="image-placeholder">
+                                <div class="placeholder-grid">
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item active"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                </div>
+                                <div class="placeholder-overlay">
+                                    <div class="overlay-content">
+                                        <i class="fas fa-users"></i>
+                                        <span>Our Creative Team</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-metrics">
+                            <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="metric-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-number">25+</div>
+                                    <div class="metric-label">Awards Won</div>
+                                </div>
+                            </div>
+                            
+                            <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="metric-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-number">15</div>
+                                    <div class="metric-label">Countries Served</div>
+                                </div>
+                            </div>
+                            
+                            <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="metric-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="metric-content">
+                                    <div class="metric-number">99%</div>
+                                    <div class="metric-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-values" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="values-title">Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-item" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="value-title">Innovation</h4>
+                        <p class="value-description">
+                            We constantly explore new technologies and methodologies to deliver cutting-edge solutions that set our clients apart.
+                        </p>
+                    </div>
+                    
+                    <div class="value-item" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="value-title">Collaboration</h4>
+                        <p class="value-description">
+                            We believe in working closely with our clients as partners, ensuring their vision is at the heart of every project.
+                        </p>
+                    </div>
+                    
+                    <div class="value-item" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="value-title">Excellence</h4>
+                        <p class="value-description">
+                            Quality is never an accident. We maintain the highest standards in every aspect of our work, from concept to delivery.
+                        </p>
+                    </div>
+                    
+                    <div class="value-item" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="value-title">People First</h4>
+                        <p class="value-description">
+                            Behind every great project are great people. We invest in our team and prioritize human connections in all we do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-background">
+            <div class="bg-element bg-element-1"></div>
+            <div class="bg-element bg-element-2"></div>
+            <div class="bg-element bg-element-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Our Services</div>
+                <h2 class="section-title">
+                    <span class="title-line">Complete Digital</span>
+                    <span class="title-line title-accent">Solutions Suite</span>
+                </h2>
+                <p class="section-description">
+                    From concept to launch, we provide end-to-end digital services that help your business thrive in the digital landscape.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card service-featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="service-badge">Most Popular</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">
+                            Create intuitive and visually stunning user experiences that convert visitors into customers. 
+                            Our design process focuses on user research, wireframing, prototyping, and visual design.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> User Research & Analysis</li>
+                            <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                            <li><i class="fas fa-check"></i> Visual Design & Branding</li>
+                            <li><i class="fas fa-check"></i> Usability Testing</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">$2,500</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn btn-primary">
+                            <span>Get Started</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">
+                            Build fast, secure, and scalable web applications using modern technologies. 
+                            From simple websites to complex web applications.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Web Design</li>
+                            <li><i class="fas fa-check"></i> Custom Web Applications</li>
+                            <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">$3,500</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Mobile Apps</h3>
+                        <p class="service-description">
+                            Native and cross-platform mobile applications that provide exceptional user experiences 
+                            across iOS and Android platforms.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> iOS & Android Development</li>
+                            <li><i class="fas fa-check"></i> Cross-platform Solutions</li>
+                            <li><i class="fas fa-check"></i> App Store Optimization</li>
+                            <li><i class="fas fa-check"></i> Maintenance & Support</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">$5,000</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">
+                            Comprehensive digital marketing strategies that drive traffic, engagement, and conversions 
+                            across all digital channels.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> SEO & Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                            <li><i class="fas fa-check"></i> PPC & Ad Campaigns</li>
+                            <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">$1,500</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Brand Identity</h3>
+                        <p class="service-description">
+                            Create memorable brand identities that resonate with your target audience and 
+                            differentiate you from competitors.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Logo Design & Branding</li>
+                            <li><i class="fas fa-check"></i> Brand Strategy</li>
+                            <li><i class="fas fa-check"></i> Marketing Materials</li>
+                            <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">$2,000</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="#contact" class="service-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Consultation</h3>
+                        <p class="service-description">
+                            Strategic consultation to help you make informed decisions about your digital transformation 
+                            and technology investments.
